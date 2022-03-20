@@ -1,0 +1,82 @@
+### hello rest 
+GET http://localhost:3000/api/log
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ0ZXN0MSIsInVzZXJOYW1lIjoidGVzdG5hbWUxIiwiX2lkIjoiNjIzMmQzNjFmY2NlODY2NThmZTM3NzEwIiwiaWF0IjoxNjQ3Njk2NzI4LCJleHAiOjE2NDc3ODMxMjh9.dXsv_cW_KdB-113t25XjqDQ2JHBg4Ba5NSk8kZ5RrgI
+
+### count total log
+GET http://localhost:3000/api/log/count
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ0ZXN0MSIsInVzZXJOYW1lIjoidGVzdG5hbWUxIiwiX2lkIjoiNjIzMmQzNjFmY2NlODY2NThmZTM3NzEwIiwiaWF0IjoxNjQ3Njk2NzI4LCJleHAiOjE2NDc3ODMxMjh9.dXsv_cW_KdB-113t25XjqDQ2JHBg4Ba5NSk8kZ5RrgI
+
+### add log
+POST http://localhost:3000/api/log/add
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ0ZXN0MSIsInVzZXJOYW1lIjoidGVzdG5hbWUxIiwiX2lkIjoiNjIzMmQzNjFmY2NlODY2NThmZTM3NzEwIiwiaWF0IjoxNjQ3Njk2NzI4LCJleHAiOjE2NDc3ODMxMjh9.dXsv_cW_KdB-113t25XjqDQ2JHBg4Ba5NSk8kZ5RrgI
+
+{"content":"hello world"}
+
+### list log
+GET http://localhost:3000/api/log/list?skip=0&limit=10
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ0ZXN0MSIsInVzZXJOYW1lIjoidGVzdG5hbWUxIiwiX2lkIjoiNjIzMmQzNjFmY2NlODY2NThmZTM3NzEwIiwiaWF0IjoxNjQ3Njk2NzI4LCJleHAiOjE2NDc3ODMxMjh9.dXsv_cW_KdB-113t25XjqDQ2JHBg4Ba5NSk8kZ5RrgI
+
+### delete log
+GET http://localhost:3000/api/log/delete/?id=622fee3a572f39f673f5c0b2
+
+### update log
+POST http://localhost:3000/api/log/update
+Content-Type: application/json
+
+{"content":"**hello world**","id":"62303be526d962058d730736"}
+
+### user mng
+GET http://localhost:3000/api/users
+authorization : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ0ZXN0MSIsInVzZXJOYW1lIjoidGVzdG5hbWUxIiwiX2lkIjoiNjIzMmQzNjFmY2NlODY2NThmZTM3NzEwIiwiaWF0IjoxNjQ3NTY3MTk3LCJleHAiOjE2NDc2NTM1OTd9.SxBr2dAVTc56W9hd9IeNkAjz9d6UT0iKorge4-OUTtg
+
+### add user
+POST http://localhost:3000/api/users/add
+Content-Type: application/json
+
+{"userName":"testname1","userId":"test1","userPw":"test1"}
+
+### find user
+POST http://localhost:3000/api/users/find
+Content-Type: application/json
+
+{"userId":"test1"}
+
+### count user
+GET http://localhost:3000/api/users/count
+Content-Type: application/json
+
+### list user
+GET http://localhost:3000/api/users/list
+Content-Type: application/json
+
+### find user
+POST http://localhost:3000/api/users/find
+Content-Type: application/json
+
+{"userId":"test1"}
+
+### delete user
+GET http://localhost:3000/api/users/delete/?userId=test1
+Content-Type: application/json
+
+### update user
+POST http://localhost:3000/api/users/update
+Content-Type: application/json
+
+{"userName":"testname2","userId":"test2","userPw":"test2"}
+
+### auth
+GET http://localhost:3000/api/auth
+
+### auth
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{"userId":"test1","userPw":"test1"}
+
+
+
+

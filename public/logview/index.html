@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../index.css" crossorigin="anonymous">
+</head>
+<body>
+    
+    <h2 id="userInfo"></h2>
+    <div id="logView" class="container">
+        
+        
+        <h2></h2>
+
+        <div id="logList">
+            <h3></h3>
+            <ul></ul>
+        </div>
+
+        <div>
+            <form id="addLog">
+                <!-- <label for="date">date</label>
+                <input type="text" name="date" placeholder="date"> -->
+                <label for="content">content</label>
+                <input type="text" name="content" placeholder="content">
+
+                <button class="add" > add </button>
+                <button class="del" > del </button>
+                <button class="update" > update </button>
+            </form>
+        </div>
+
+        
+
+    </div>
+
+    <script type="module">
+        import main from './index.js';
+        document.addEventListener('DOMContentLoaded', main);
+    </script>
+</body>
+</html>

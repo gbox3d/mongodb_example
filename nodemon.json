@@ -1,0 +1,9 @@
+{
+    "ignore": ["package.json","./node_modules/*",
+      "./public/*",
+      "./sample/*",
+      "./views/*"
+    ],
+    "exec": "babel-node index.js"
+  }
+  
